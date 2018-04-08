@@ -1,7 +1,7 @@
 
   <h2 align="center">React Native hGraph</h2>
 <p align="center">
-  <a href="http://hgraph.or">
+  <a href="http://hgraph.org">
     <img width="400" src="https://firebasestorage.googleapis.com/v0/b/health-score-6740b.appspot.com/o/development%2Fresources%2Fimages%2FSimulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-04-07%20at%2022.07.28.png?alt=media&token=48afa9ee-7256-4623-b335-6d1b6a257341"><br/>
   </a>
 
