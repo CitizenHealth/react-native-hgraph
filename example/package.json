@@ -1,0 +1,28 @@
+{
+  "name": "example",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "react": "^16.3.0",
+    "react-native": "^0.54.4",
+    "react-native-size-matters": "^0.1.0",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-thunk": "^2.2.0",
+    "react-native-hgraph": "../"
+  },
+  "devDependencies": {
+    "babel-jest": "^22.4.3",
+    "babel-preset-react-native": "^4.0.0",
+    "jest": "^22.4.3",
+    "react-test-renderer": "^16.3.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

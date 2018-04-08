@@ -1,0 +1,32 @@
+{
+  "name": "react-native-hgraph",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "hGraph"
+  ],
+  "author": "Nabyl Bennouri <dev@citizenhealth.io> (http://www.citizenhealth.io)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/citizenhealth/react-native-hgraph.git"
+  },
+  "license": "GPL-3.0",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "dependencies": {
+    "d3-ease": "^1.0.3",
+    "d3-format": "^1.2.2",
+    "d3-scale": "^2.0.0",
+    "d3-shape": "^1.2.0",
+    "prop-types": "^15.6.1",
+    "react-move": "^2.7.0",
+    "react-native-svg": "^6.3.1"
+  }
+}
