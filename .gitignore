@@ -6,13 +6,14 @@
 # node.js
 #
 node_modules/
+example/node_modules/
 npm-debug.log
 yarn-error.log
   
 
 # Xcode
 #
-build/
+example/ios/build/
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -33,7 +34,7 @@ project.xcworkspace
 
 # Android/IntelliJ
 #
-build/
+example/android/build/
 .idea
 .gradle
 local.properties

@@ -1,15 +1,14 @@
-
   <h2 align="center">React Native hGraph</h2>
 <p align="center">
-  <a href="http://hgraph.org">
+  <a href="https://humanapi.co">
     <img width="400" src="https://firebasestorage.googleapis.com/v0/b/health-score-6740b.appspot.com/o/development%2Fresources%2Fimages%2FSimulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-04-07%20at%2022.07.28.png?alt=media&token=48afa9ee-7256-4623-b335-6d1b6a257341"><br/>
   </a>
 
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/react-native-human-api"><img src="https://img.shields.io/npm/dt/react-native-human-api.svg?style=flat-square" alt="NPM downloads"></a>
-  <a href="https://www.npmjs.com/package/react-native-human-api"><img src="https://img.shields.io/npm/v/react-native-human-api.svg?style=flat-square" alt="NPM version"></a>
+  <a href="https://www.npmjs.com/package/react-native-hgraph"><img src="https://img.shields.io/npm/dt/react-native-hgraph.svg?style=flat-square" alt="NPM downloads"></a>
+  <a href="https://www.npmjs.com/package/react-native-hgraph"><img src="https://img.shields.io/npm/v/react-native-hgraph.svg?style=flat-square" alt="NPM version"></a>
   <a href="/LICENSE"><img src="https://img.shields.io/aur/license/yaourt.svg?style=flat-square" alt="License"></a>
   <a href="https://twitter.com/citizenhealth"><img src="https://img.shields.io/twitter/follow/CitizenHealthio.svg?style=social&logo=twitter&label=Follow" alt="Follow on Twitter"></a>
 </p>
