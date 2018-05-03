@@ -149,6 +149,7 @@ class Home extends Component {
             showAxisLabel={true}
             scoreFontSize= {50} 
             data= {this.props.data} 
+            hitboxRadius={25}
             />
             <TouchableOpacity
                 style = {buttonContainerStyle}

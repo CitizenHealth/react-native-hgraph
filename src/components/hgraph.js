@@ -62,11 +62,14 @@ class HGraph extends Component {
     pointRadius: PropTypes.number,
     pointLabelOffset: PropTypes.number,
     pointLabelWrapWidth: PropTypes.number,
+    hitboxRadius: PropTypes.number,
     showScore: PropTypes.bool,
     scoreFontSize: PropTypes.number,
     scoreFontColor: PropTypes.string,
     zoomFactor: PropTypes.number,
-    zoomTransitionTime: PropTypes.number
+    zoomTransitionTime: PropTypes.number,
+    zoomOnPointClick: PropTypes.bool,
+    onPointClick: PropTypes.func,
   };
 
   static defaultProps = {
@@ -92,7 +95,8 @@ class HGraph extends Component {
     scoreFontSize: 120,
     scoreFontColor: '#3ED295',
     zoomFactor: 2.25,
-    zoomTransitionTime: 750
+    zoomTransitionTime: 750,
+    zoomOnPointClick: true
   }
 
   constructor(props) {
@@ -112,7 +116,8 @@ class HGraph extends Component {
       zoomFactor: 1,
       points: points,
       path: this.assemblePath(points),
-      suppressTransition: true,
+      suppressTransition: false,
+      animatingChildren: false,
       fontSize: props.fontSize
     };
 
@@ -192,7 +197,8 @@ class HGraph extends Component {
   }
 
   handlePointClick = (d) => (e) => {
-    e.stopPropagation();
+    if (this.props.zoomOnPointClick) {
+      e.stopPropagation();
 
     const cos = Math.cos(d.angle - Math.PI / 2);
     const sin = Math.sin(d.angle - Math.PI / 2);
@@ -202,16 +208,20 @@ class HGraph extends Component {
 
     if (this.state.zoomed && d.key === this.state.activePointId) {
       this.zoomOut();
-    } else {
-      if (!this.state.zoomed) {
-        this.addChildren();
-      }
-      this.setState({
+      } else {
+        if (!this.state.zoomed) {
+          this.addChildren();
+        }
+        this.setState({
         activePointId: d.key,
         zoomed: true,
         zoomCoords: [cx, cy],
         zoomFactor: this.props.zoomFactor
-      });
+        });
+      }
+    }
+    if (this.props.onPointClick) {
+      this.props.onPointClick(d.originalData, e);
     }
   }
 
@@ -258,22 +268,27 @@ class HGraph extends Component {
         : cy > this.labelConfigurationHeightCutoff ? 'start'
         : 'middle';
 
-      return {
-        key: d.id,
-        value: parseFloat(Math.round(d.value * 100) / 100).toFixed(2),
-        angle: d.angle,
-        cx: d.cx || cx,
-        cy: d.cy || cy,
-        activeCx,
-        activeCy,
-        color: this.thresholdColor(percentageFromValue, this.props.color),
-        fontColor: this.thresholdColor(percentageFromValue, this.props.fontColor),
-        unitLabel: d.unitLabel,
-        textAnchor,
-        verticalAnchor,
-        isChild: d.isChild || false,
-        children: d.children || null
-      };
+    const originalData = Object.assign({}, d);
+    delete originalData.angle;
+    delete originalData.isChild;
+    
+    return {
+      key: d.id,
+      value: d.value,
+      angle: d.angle,
+      cx: d.cx || cx,
+      cy: d.cy || cy,
+      activeCx,
+      activeCy,
+      color: this.thresholdColor(percentageFromValue, this.props.color),
+      fontColor: this.thresholdColor(percentageFromValue, this.props.fontColor),
+      unitLabel: d.unitLabel,
+      textAnchor,
+      verticalAnchor,
+      isChild: d.isChild || false,
+      children: d.children || null,
+      originalData
+    };
   }
 
   assemblePath = (points) => {
@@ -365,6 +380,7 @@ class HGraph extends Component {
       returnIntrimData: intrimData,
       returnIntrimPoints: intrimPoints,
       returnIntrimPath: intrimPath,
+      animatingChildren: true,
       suppressTransition: true
     }, () => {
       this.setState({
@@ -386,6 +402,7 @@ class HGraph extends Component {
         data: this.state.returnIntrimData,
         points: this.state.returnIntrimPoints,
         path: this.state.returnIntrimPath,
+        animatingChildren: true,
         suppressTransition: false,
       }, () => {
         setTimeout(() => {
@@ -396,7 +413,13 @@ class HGraph extends Component {
             returnIntrimData: null,
             returnIntrimPoints: null,
             returnIntrimPath: null,
+            animatingChildren: true,
             suppressTransition: true
+          }, () => {
+              this.setState({
+              animatingChildren: false,
+              suppressTransition: false
+            });
           });
         }, this.props.zoomTransitionTime + 50);
       });
@@ -405,8 +428,14 @@ class HGraph extends Component {
         data: finalData,
         points: finalPoints,
         path: finalPath,
+        animatingChildren: true,
         suppressTransition: true
+      }, () => {
+        this.setState({
+        animatingChildren: false,
+        suppressTransition: false
       });
+    });
     }
   }
 
@@ -509,12 +538,14 @@ class HGraph extends Component {
             {
               cx: this.state.suppressTransition ? d.cx : [d.cx],
               cy: this.state.suppressTransition ? d.cy : [d.cy],
+              color: [d.color],
               r: !zoomed && d.isChild ? [1] : d.isChild ? [radius * .75] : [radius],
               opacity: !zoomed && d.isChild ? [0] : [1],
               timing: {
                 duration: this.props.zoomTransitionTime,
                 ease: d.isChild ? easeElastic : easeExp,
                 delay:
+                !this.state.animatingChildren ? 0 :
                   (zoomed && !d.isChild) ? 0 :
                   (zoomed && d.isChild) ? this.props.zoomTransitionTime :
                   (!zoomed && !d.isChild) ? this.props.zoomTransitionTime :
@@ -545,10 +576,17 @@ class HGraph extends Component {
                     <Circle
                       className="polygon__point"
                       r={ state.r }
-                      fill={ data.color }
+                      fill={ state.color || data.color }
                       cx={ state.cx }
                       cy={ state.cy }
-                      opacity={ state.opacity }
+                      opacity={ state.opacity }>
+                    </Circle>
+                    <Circle
+                      className="polygon__point-hitbox"
+                      r={ this.props.hitboxRadius || state.r }
+                      cx={ state.cx }
+                      cy={ state.cy }
+                      opacity="0"
                       onPress={ this.handlePointClick(data) }>
                     </Circle>
                     <Text
@@ -613,15 +651,30 @@ class HGraph extends Component {
                 update={[
                   {
                     d: this.state.suppressTransition ? this.state.path : [this.state.path],
-                    timing: { duration: this.props.zoomTransitionTime, ease: easeElastic, delay: this.state.zoomed ? this.props.zoomTransitionTime : 0 }
-                  },
+                    timing: {
+                      duration: this.props.zoomTransitionTime,
+                      ease: this.state.animatingChildren ? easeElastic : easeExp,
+                      delay: this.state.animatingChildren && this.state.zoomed ? this.props.zoomTransitionTime : 0
+                    },
+                      events: {
+                        end() {
+                          this.setState({
+                            animatingChildren: false
+                          });
+                        }
+                      }
+                    },
                   {
                     zoomFactor: [this.state.zoomFactor],
                     zoomCoords: [this.state.zoomCoords],
                     fontSize: [this.props.fontSize / this.state.zoomFactor],
                     pointRadius: [this.props.pointRadius / this.state.zoomFactor],
-                    timing: { duration: this.props.zoomTransitionTime, ease: easeExp, delay: this.state.zoomed ? 0 : this.props.zoomTransitionTime }
-                  }
+                    timing: {
+                        duration: this.props.zoomTransitionTime,
+                        ease: easeExp,
+                        delay: this.state.zoomed ? 0 : this.props.zoomTransitionTime
+                      }
+                    }
                 ]}>
                 {(globalState) => {
                   return (

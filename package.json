@@ -1,6 +1,6 @@
 {
   "name": "react-native-hgraph",
-  "version": "0.0.4",
+  "version": "0.2.0",
   "description": "React Native implementation of hGraph",
   "main": "index.js",
   "scripts": {
@@ -19,6 +19,17 @@
   "peerDependencies": {
     "react": "*",
     "react-native": "*"
+  },
+  "rnpm": {
+    "android": {
+      "buildPatch": "    implementation 'react-native-hgraph'",
+      "packageImportPath": "import io.citizenhealth.RNReactNativeHgraphPackage;",
+      "packageInstance": "new RNReactNativeHgraphPackage()",
+      "sourceDir": "./android"
+    },
+    "ios": {
+      "project": "ios/RNReactNativeHgraph.xcodeproj"
+    }
   },
   "dependencies": {
     "d3-ease": "^1.0.3",

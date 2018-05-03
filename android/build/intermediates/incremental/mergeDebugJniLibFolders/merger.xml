@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/nabylbennouri/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/Apps/hgraphExample/node_modules/react-native-hgraph/android/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/Users/nabylbennouri/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/Apps/hgraphExample/node_modules/react-native-hgraph/android/src/debug/jniLibs"/></dataSet></merger>

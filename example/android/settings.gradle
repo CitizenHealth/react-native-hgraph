@@ -1,7 +1,7 @@
 rootProject.name = 'example'
-//include ':react-native-hgraph'
-//project(':react-native-hgraph').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-hgraph/android')
 include ':react-native-svg'
 project(':react-native-svg').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-svg/android')
+include ':react-native-hgraph'
+project(':react-native-hgraph').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-hgraph/android')
 
 include ':app'
