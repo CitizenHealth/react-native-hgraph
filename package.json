@@ -1,6 +1,6 @@
 {
   "name": "react-native-hgraph",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "React Native implementation of hGraph",
   "main": "index.js",
   "scripts": {
@@ -37,7 +37,6 @@
     "d3-scale": "^2.0.0",
     "d3-shape": "^1.2.0",
     "prop-types": "^15.6.1",
-    "react-move": "^2.7.0",
-    "react-native-svg": "^6.3.1"
+    "react-move": "^2.7.0"
   }
 }
