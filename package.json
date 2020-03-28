@@ -34,9 +34,9 @@
   "dependencies": {
     "d3-ease": "^1.0.3",
     "d3-format": "^1.2.2",
-    "d3-scale": "^2.0.0",
+    "d3-scale": "^3.2.1",
     "d3-shape": "^1.2.0",
     "prop-types": "^15.6.1",
-    "react-move": "^2.7.0"
+    "react-move": "^6.1.0"
   }
 }
