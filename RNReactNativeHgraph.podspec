@@ -18,5 +18,5 @@ Pod::Spec.new do |s|
   s.source_files  = "ios/**/*.{h,m}"
 
   s.dependency 'React'
-  s.dependency 'JWT', '3.0.0-beta.11'
+  s.dependency 'JWT'
 end

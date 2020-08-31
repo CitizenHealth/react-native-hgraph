@@ -1,37 +1,37 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/nabylbennouri/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/Apps/hgraphExample/node_modules/react-native-hgraph/android/src/main/AndroidManifest.xml:2:1-5:12
-INJECTED from /Users/nabylbennouri/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/Apps/hgraphExample/node_modules/react-native-hgraph/android/src/main/AndroidManifest.xml:2:1-5:12
-INJECTED from /Users/nabylbennouri/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/Apps/hgraphExample/node_modules/react-native-hgraph/android/src/main/AndroidManifest.xml:2:1-5:12
-INJECTED from /Users/nabylbennouri/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/Apps/hgraphExample/node_modules/react-native-hgraph/android/src/main/AndroidManifest.xml:2:1-5:12
-INJECTED from /Users/nabylbennouri/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/Apps/hgraphExample/node_modules/react-native-hgraph/android/src/main/AndroidManifest.xml:2:1-5:12
-INJECTED from /Users/nabylbennouri/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/Apps/hgraphExample/node_modules/react-native-hgraph/android/src/main/AndroidManifest.xml:2:1-5:12
-INJECTED from /Users/nabylbennouri/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/Apps/hgraphExample/node_modules/react-native-hgraph/android/src/main/AndroidManifest.xml:2:1-5:12
+ADDED from /Users/nabylb/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/GitHub/react-native-hgraph/android/src/main/AndroidManifest.xml:2:1-5:12
+INJECTED from /Users/nabylb/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/GitHub/react-native-hgraph/android/src/main/AndroidManifest.xml:2:1-5:12
+INJECTED from /Users/nabylb/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/GitHub/react-native-hgraph/android/src/main/AndroidManifest.xml:2:1-5:12
+INJECTED from /Users/nabylb/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/GitHub/react-native-hgraph/android/src/main/AndroidManifest.xml:2:1-5:12
+INJECTED from /Users/nabylb/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/GitHub/react-native-hgraph/android/src/main/AndroidManifest.xml:2:1-5:12
+INJECTED from /Users/nabylb/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/GitHub/react-native-hgraph/android/src/main/AndroidManifest.xml:2:1-5:12
+INJECTED from /Users/nabylb/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/GitHub/react-native-hgraph/android/src/main/AndroidManifest.xml:2:1-5:12
 	package
-		ADDED from /Users/nabylbennouri/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/Apps/hgraphExample/node_modules/react-native-hgraph/android/src/main/AndroidManifest.xml:3:11-37
-		INJECTED from /Users/nabylbennouri/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/Apps/hgraphExample/node_modules/react-native-hgraph/android/src/main/AndroidManifest.xml
-		INJECTED from /Users/nabylbennouri/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/Apps/hgraphExample/node_modules/react-native-hgraph/android/src/main/AndroidManifest.xml
+		ADDED from /Users/nabylb/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/GitHub/react-native-hgraph/android/src/main/AndroidManifest.xml:3:11-37
+		INJECTED from /Users/nabylb/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/GitHub/react-native-hgraph/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/nabylb/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/GitHub/react-native-hgraph/android/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/nabylbennouri/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/Apps/hgraphExample/node_modules/react-native-hgraph/android/src/main/AndroidManifest.xml
-		ADDED from /Users/nabylbennouri/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/Apps/hgraphExample/node_modules/react-native-hgraph/android/src/main/AndroidManifest.xml:2:1-5:12
-		INJECTED from /Users/nabylbennouri/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/Apps/hgraphExample/node_modules/react-native-hgraph/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/nabylb/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/GitHub/react-native-hgraph/android/src/main/AndroidManifest.xml
+		ADDED from /Users/nabylb/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/GitHub/react-native-hgraph/android/src/main/AndroidManifest.xml:2:1-5:12
+		INJECTED from /Users/nabylb/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/GitHub/react-native-hgraph/android/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/nabylbennouri/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/Apps/hgraphExample/node_modules/react-native-hgraph/android/src/main/AndroidManifest.xml
-		ADDED from /Users/nabylbennouri/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/Apps/hgraphExample/node_modules/react-native-hgraph/android/src/main/AndroidManifest.xml:2:1-5:12
-		INJECTED from /Users/nabylbennouri/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/Apps/hgraphExample/node_modules/react-native-hgraph/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/nabylb/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/GitHub/react-native-hgraph/android/src/main/AndroidManifest.xml
+		ADDED from /Users/nabylb/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/GitHub/react-native-hgraph/android/src/main/AndroidManifest.xml:2:1-5:12
+		INJECTED from /Users/nabylb/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/GitHub/react-native-hgraph/android/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/nabylbennouri/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/Apps/hgraphExample/node_modules/react-native-hgraph/android/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/nabylb/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/GitHub/react-native-hgraph/android/src/main/AndroidManifest.xml:2:11-69
 uses-sdk
-INJECTED from /Users/nabylbennouri/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/Apps/hgraphExample/node_modules/react-native-hgraph/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/nabylbennouri/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/Apps/hgraphExample/node_modules/react-native-hgraph/android/src/main/AndroidManifest.xml
-INJECTED from /Users/nabylbennouri/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/Apps/hgraphExample/node_modules/react-native-hgraph/android/src/main/AndroidManifest.xml
-INJECTED from /Users/nabylbennouri/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/Apps/hgraphExample/node_modules/react-native-hgraph/android/src/main/AndroidManifest.xml
-INJECTED from /Users/nabylbennouri/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/Apps/hgraphExample/node_modules/react-native-hgraph/android/src/main/AndroidManifest.xml
+INJECTED from /Users/nabylb/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/GitHub/react-native-hgraph/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/nabylb/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/GitHub/react-native-hgraph/android/src/main/AndroidManifest.xml
+INJECTED from /Users/nabylb/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/GitHub/react-native-hgraph/android/src/main/AndroidManifest.xml
+INJECTED from /Users/nabylb/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/GitHub/react-native-hgraph/android/src/main/AndroidManifest.xml
+INJECTED from /Users/nabylb/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/GitHub/react-native-hgraph/android/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/nabylbennouri/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/Apps/hgraphExample/node_modules/react-native-hgraph/android/src/main/AndroidManifest.xml
-		ADDED from /Users/nabylbennouri/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/Apps/hgraphExample/node_modules/react-native-hgraph/android/src/main/AndroidManifest.xml
-		INJECTED from /Users/nabylbennouri/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/Apps/hgraphExample/node_modules/react-native-hgraph/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/nabylb/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/GitHub/react-native-hgraph/android/src/main/AndroidManifest.xml
+		ADDED from /Users/nabylb/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/GitHub/react-native-hgraph/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/nabylb/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/GitHub/react-native-hgraph/android/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/nabylbennouri/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/Apps/hgraphExample/node_modules/react-native-hgraph/android/src/main/AndroidManifest.xml
-		ADDED from /Users/nabylbennouri/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/Apps/hgraphExample/node_modules/react-native-hgraph/android/src/main/AndroidManifest.xml
-		INJECTED from /Users/nabylbennouri/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/Apps/hgraphExample/node_modules/react-native-hgraph/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/nabylb/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/GitHub/react-native-hgraph/android/src/main/AndroidManifest.xml
+		ADDED from /Users/nabylb/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/GitHub/react-native-hgraph/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/nabylb/Documents/COMPANYS/ThreeFourteen/Clients/CitizenHealth/GitHub/react-native-hgraph/android/src/main/AndroidManifest.xml

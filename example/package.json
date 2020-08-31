@@ -3,27 +3,50 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "update:modules": "../scripts/update_modules.sh"
   },
   "dependencies": {
-    "react": "^16.3.0",
-    "react-native": "^0.54.4",
-    "react-native-size-matters": "^0.1.0",
-    "react-redux": "^5.0.7",
-    "redux": "^3.7.2",
-    "redux-devtools-extension": "^2.13.2",
-    "redux-thunk": "^2.2.0",
-    "react-native-svg": "^6.3.1",
-    "react-native-hgraph": "../"
+    "react": "16.13.1",
+    "react-native": "0.63.2",
+    "react-native-hgraph": "../",
+    "react-native-size-matters": "^0.3.0",
+    "react-native-svg": "^12.1.0",
+    "react-redux": "^7.2.1",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
-    "babel-jest": "^22.4.3",
-    "babel-preset-react-native": "^4.0.0",
-    "jest": "^22.4.3",
-    "react-test-renderer": "^16.3.0"
+    "@babel/core": "^7.8.4",
+    "@babel/runtime": "^7.8.4",
+    "@react-native-community/eslint-config": "^1.1.0",
+    "@types/jest": "^25.2.3",
+    "@types/react-native": "^0.63.2",
+    "@types/react-test-renderer": "^16.9.2",
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/parser": "^2.27.0",
+    "babel-jest": "^25.1.0",
+    "eslint": "^6.5.1",
+    "jest": "^25.1.0",
+    "metro-react-native-babel-preset": "^0.59.0",
+    "react-test-renderer": "16.13.1",
+    "prettier": "^2.0.4",
+    "typescript": "^3.8.3"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
   }
 }
